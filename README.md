@@ -48,11 +48,11 @@ Once level #1 is done, those identified candidates can proceed to Level #2 and l
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| CAO LIANG            | A0012884E | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A0012884E@nus.edu.sg |
-| GENG LIANGYU         | A0195278M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A0195278M@nus.edu.sg |
-| HAN DONGCHOU FRANCIS | A0195414A | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A0195414A@nus.edu.sg |
-| ONG BOON PING        | A0195172B | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A0195172B@nus.edu.sg |
-| TAN CHIN GEE         | A0195296M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A0195296M@nus.edu.sg |
+| CAO LIANG            | A0012884E | Architect, Application Logic and Integration    | A0012884E@nus.edu.sg |
+| GENG LIANGYU         | A0195278M | Web Application and Landing Page                | A0195278M@nus.edu.sg |
+| HAN DONGCHOU FRANCIS | A0195414A | Team Lead, Documentation, and Submission        | A0195414A@nus.edu.sg |
+| ONG BOON PING        | A0195172B | KIE Workflow and Data Structure                 | A0195172B@nus.edu.sg |
+| TAN CHIN GEE         | A0195296M | Domain Expert and Documentation                 | A0195296M@nus.edu.sg |
 
 
 ---
@@ -66,7 +66,7 @@ More reference video presentations [here](https://telescopeuser.wordpress.com/20
 ---
 ## SECTION 5 : USER GUIDE
 
-`<Github File Link>` : <https://github.com/telescopeuser/Workshop-Project-Submission-Template/blob/master/UserGuide/User%20Guide%20HDB-BTO.pdf>
+`<Github File Link>` : <https://github.com/francis-han/Group-Project/blob/master/UserGuide/Users%20Manual.pdf>
 
 ### [ 1 ] To run the system using iss-vm
 
@@ -96,7 +96,7 @@ More reference video presentations [here](https://telescopeuser.wordpress.com/20
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
-`<Github File Link>` : <https://github.com/francis-han/Group-Project/blob/master/Project%20Report/Project%20Report4.pdf>
+`<Github File Link>` : <https://github.com/francis-han/Group-Project/blob/master/Project%20Report/Project%20Report5.pdf>
 
 **Recommended Sections for Project Report / Paper:**
 - Executive Summary / Paper Abstract
