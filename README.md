@@ -58,7 +58,7 @@ Once level #1 is done, those identified candidates can proceed to Level #2 and l
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-[![Depression Screening System](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Sudoku AI Solver")
+[![Depression Screening System](https://youtu.be/GR76Qz-xc4k)
 
 Note: It is not mandatory for every project member to appear in video presentation; Presentation by one project member is acceptable. 
 More reference video presentations [here](https://telescopeuser.wordpress.com/2018/03/31/master-of-technology-solution-know-how-video-index-2/ "video presentations")
