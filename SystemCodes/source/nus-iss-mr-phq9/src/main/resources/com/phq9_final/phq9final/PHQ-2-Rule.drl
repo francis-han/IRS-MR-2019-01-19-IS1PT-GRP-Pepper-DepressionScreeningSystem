@@ -1,0 +1,14 @@
+package com.phq9_final.phq9final;
+
+import java.lang.Number;
+
+rule "PHQ-2-Rule"
+	dialect "mvel"
+	//ruleflow-group "PHQ-2-Rule"
+	when
+		PHQ2Qa : PHQ2Q( PHQQ1 >= 2.0 || PHQQ2 >= 2.0 )
+	then
+		PHQ2R PHQ2Ra = new PHQ2R();
+		PHQ2Ra.setPHQ2Result( true );
+		insert( PHQ2Ra );
+end

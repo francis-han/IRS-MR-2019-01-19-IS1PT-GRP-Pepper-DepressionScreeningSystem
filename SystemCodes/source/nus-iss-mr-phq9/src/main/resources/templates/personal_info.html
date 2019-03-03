@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PHQ9 Screening</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/static/css/common.css" th:href="@{/css/common.css}" />
+</head>
+<body>
+
+<form action="#" th:action="@{/personal_info_submit}" th:object="${personDto}" method="post">
+
+<table style="text-align:left;">
+    <thead>
+        <tr>
+            <th colspan="2" height="40">Please provide your info below before starting PHQ9 screening</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td height="40">Gender</td>
+            <td>
+                <input type="radio" name="gender" th:field="*{gender}" value="0"/>Male
+                <input type="radio" name="gender" th:field="*{gender}" value="1"/>Female
+            </td>
+        <tr>
+            <td height="40">
+                <label>Age</label>
+            </td>
+            <td>
+                <select name="ageRangeSelector" th:field="*{age}">
+                    <option value="0">18-34</option>
+                    <option value="1">35-49</option>
+                    <option value="2">49-64</option>
+                    <option value="3">65+</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td height="40">
+                <label>Ethnicity</label>
+            </td>
+            <td>
+                <select name="ethnicitySelector" th:field="*{ethnicity}">
+                    <option value="0">Chinese</option>
+                    <option value="1">Malay</option>
+                    <option value="2">Indian</option>
+                    <option value="3">Others</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td height="40">
+                <label>Marital Status</label>
+            </td>
+            <td>
+                <select name="maritalStatusSelector" th:field="*{maritalStatus}">
+                    <option value="0">Single</option>
+                    <option value="1">Married</option>
+                    <option value="2">Separated</option>
+                    <option value="3">Widowed</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td height="40">
+                <label>Any Chronic Physical Condition</label>
+            </td>
+            <td>
+                <input type="radio" name="chronicPhysicalCdn" value="0" th:field="*{chronicPhysicalCdn}"/>Yes
+                <input type="radio" name="chronicPhysicalCdn" value="1" th:field="*{chronicPhysicalCdn}"/>No
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br/>
+<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

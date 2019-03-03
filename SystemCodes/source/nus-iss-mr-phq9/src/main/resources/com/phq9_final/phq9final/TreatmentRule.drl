@@ -1,0 +1,51 @@
+package com.phq9_final.phq9final;
+
+import java.lang.Number;
+
+rule "TreatmentRule_1"
+	dialect "mvel"
+	ruleflow-group "TreatmentGen"
+	when
+		PHQ2Qa : PHQ2Q( $Q1R : PHQQ1, $Q2R : PHQQ2)
+		PHQ9Qa : PHQ9Q( $Q3R : PHQQ3, $Q4R : PHQQ4, $Q5R : PHQQ5, $Q6R : PHQQ6, $Q7R : PHQQ7, $Q8R : PHQQ8, $Q9R : PHQQ9, $Q1R+$Q2R+$Q3R+$Q4R+$Q5R+$Q6R+$Q7R+$Q8R+$Q9R > 19)
+	then
+		Treatment1 fact2 = new Treatment1();
+		fact2.setTreat1( true );
+		insert( fact2 );
+end
+
+rule "TreatmentRule_2"
+	dialect "mvel"
+	ruleflow-group "TreatmentGen"
+	when
+		PHQ2Qa : PHQ2Q( $Q1R : PHQQ1, $Q2R : PHQQ2)
+		PHQ9Qa : PHQ9Q( $Q3R : PHQQ3, $Q4R : PHQQ4, $Q5R : PHQQ5, $Q6R : PHQQ6, $Q7R : PHQQ7, $Q8R : PHQQ8, $Q9R : PHQQ9, $Q1R+$Q2R+$Q3R+$Q4R+$Q5R+$Q6R+$Q7R+$Q8R+$Q9R > 13 , $Q1R+$Q2R+$Q3R+$Q4R+$Q5R+$Q6R+$Q7R+$Q8R+$Q9R <=19 )
+	then
+		Treatment2 fact2 = new Treatment2();
+		fact2.setTreat2( true );
+		insert( fact2 );
+end
+
+rule "TreatmentRule_3"
+	dialect "mvel"
+	ruleflow-group "TreatmentGen"
+	when
+		PHQ2Qa : PHQ2Q( $Q1R : PHQQ1, $Q2R : PHQQ2)
+		PHQ9Qa : PHQ9Q( $Q3R : PHQQ3, $Q4R : PHQQ4, $Q5R : PHQQ5, $Q6R : PHQQ6, $Q7R : PHQQ7, $Q8R : PHQQ8, $Q9R : PHQQ9, $Q1R+$Q2R+$Q3R+$Q4R+$Q5R+$Q6R+$Q7R+$Q8R+$Q9R >8 , $Q1R+$Q2R+$Q3R+$Q4R+$Q5R+$Q6R+$Q7R+$Q8R+$Q9R<= 13 )
+	then
+		Treatment3 fact2 = new Treatment3();
+		fact2.setTreat3( true );
+		insert( fact2 );
+end
+
+rule "TreatmentRule_4"
+	dialect "mvel"
+	ruleflow-group "TreatmentGen"
+	when
+		PHQ2Qa : PHQ2Q( $Q1R : PHQQ1, $Q2R : PHQQ2)
+		PHQ9Qa : PHQ9Q( $Q3R : PHQQ3, $Q4R : PHQQ4, $Q5R : PHQQ5, $Q6R : PHQQ6, $Q7R : PHQQ7, $Q8R : PHQQ8, $Q9R : PHQQ9, $Q1R+$Q2R+$Q3R+$Q4R+$Q5R+$Q6R+$Q7R+$Q8R+$Q9R >4 , $Q1R+$Q2R+$Q3R+$Q4R+$Q5R+$Q6R+$Q7R+$Q8R+$Q9R<=8 )
+	then
+		Treatment4 fact2 = new Treatment4();
+		fact2.setTreat4( true );
+		insert( fact2 );
+end

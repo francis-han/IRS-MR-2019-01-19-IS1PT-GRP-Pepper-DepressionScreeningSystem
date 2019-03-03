@@ -1,0 +1,55 @@
+package com.phq9_final.phq9final;
+
+import java.lang.Number;
+
+
+rule "PreScreenRule_0"
+	dialect "mvel"
+	//ruleflow-group "PreScreenRuleG"
+	when 
+		PatientP : PatientParticular(marital_status matches "Separated")
+	then 
+		PreScreenR $var0 = new PreScreenR();
+		$var0.setPreScreenResult( true );
+		insert( $var0 );
+end
+rule "PreScreenRule_1"
+	dialect "mvel"
+	//ruleflow-group "PreScreenRuleG"
+	when 
+		PatientP : PatientParticular(marital_status matches "Widowed")
+	then 
+		PreScreenR $var0 = new PreScreenR();
+		$var0.setPreScreenResult( true );
+		insert( $var0 );
+end
+rule "PreScreenRule_2"
+	dialect "mvel"
+	//ruleflow-group "PreScreenRuleG"
+	when 
+		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race not matches "Others", age not matches "18-34", gender matches "Female", chronic matches "Yes")
+	then 
+		PreScreenR $var0 = new PreScreenR();
+		$var0.setPreScreenResult( true );
+		insert( $var0 );
+end
+rule "PreScreenRule_3"
+	dialect "mvel"
+	//ruleflow-group "PreScreenRuleG"
+	when 
+		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race not matches "Others", age matches "18-34")
+	then 
+		PreScreenR $var0 = new PreScreenR();
+		$var0.setPreScreenResult( true );
+		insert( $var0 );
+end
+rule "PreScreenRule_4"
+	dialect "mvel"
+	//ruleflow-group "PreScreenRuleG"
+	when 
+		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race matches "Others")
+	then 
+		PreScreenR $var0 = new PreScreenR();
+		$var0.setPreScreenResult( true );
+		insert( $var0 );
+end

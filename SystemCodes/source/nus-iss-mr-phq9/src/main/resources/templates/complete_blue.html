@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PHQ9 Screening</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/static/css/common.css" th:href="@{/css/common.css}" />
+</head>
+<body>
+<div style="height:100%;width:100%">
+    <div style="margin-top: 10%;margin-left:15%;font-size:30px;">
+        Thanks for your participation, the screening is done.
+    </div>
+    <div style="margin-top: 3%;margin-left:15%;font-size:30px">
+        Your PHQ-9 score is: <span th:utext="${finalScore}"/>
+    </div>
+    <div style="margin-top: 3%;margin-left:15%;font-size:30px">
+        Please refer to the table for your diagnosis <br/>
+        and recommended treatment.
+    </div>
+    <div style="margin-top: 3%;margin-left:15%;">
+        <div><img th:src="@{/img/severity_score_table.png}" /></div>
+    </div>
+</div>
+</body>
+</html>

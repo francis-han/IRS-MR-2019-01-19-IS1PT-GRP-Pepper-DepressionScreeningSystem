@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PHQ9 Screening</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/static/css/common.css" th:href="@{/css/common.css}" />
+</head>
+
+<form action="#" th:action="@{/next?currentQ=5}" th:object="${answerDto}" method="post">
+    <table style="text-align:left;">
+        <thead>
+        <tr>
+            <th height="80">Over the past 2 weeks, how often have you been bothered by any of the following problems ?</th>
+        </tr>
+        <tr>
+            <th height="40">Question 5: Poor appetite or overeating</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <!--<iframe src="/genericAnswer" scrolling="no" frameborder="0"></iframe>-->
+            <br/>
+            <div style="height:40px"><input type="radio" name="answer" value="0" th:field="*{answer}"/>Not At all</div>
+            <div style="height:40px"><input type="radio" name="answer" value="1" th:field="*{answer}"/>Several Days</div>
+            <div style="height:40px"><input type="radio" name="answer" value="2" th:field="*{answer}"/>More Than Half the Days</div>
+            <div style="height:40px"><input type="radio" name="answer" value="3" th:field="*{answer}"/>Nearly Every Day</div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+    <input type="hidden" value="5" name="currentSeq" />
+    <br/>
+    <p><input type="submit" value="Submit And Next" /></p>
+</form>
+
+</body>
+</html>
