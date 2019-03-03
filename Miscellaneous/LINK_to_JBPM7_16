@@ -1,0 +1,7 @@
+https://drive.google.com/file/d/1yTv9wW7Coz9b0nzkhAZgn1Q02Xl7EOOK/view
+
+If there is any issue to download jbpm 7.16 , contact Ong Boon Ping.
+
+The jbpm 7.16, after unzip, can be run at terminal
+
+The command is ~/jbpm-server/bin/standalone.sh in the vm.
