@@ -78,20 +78,12 @@ More reference video presentations [here](https://telescopeuser.wordpress.com/20
 
 > $ git clone https://github.com/telescopeuser/Workshop-Project-Submission-Template.git
 
-> $ source activate iss-env-py2
-
-> (iss-env-py2) $ cd Workshop-Project-Submission-Template/SystemCode/clips
-
-> (iss-env-py2) $ python app.py
 
 > **Go to URL using web browser** http://0.0.0.0:5000 or http://127.0.0.1:5000
 
 ### [ 2 ] To run the system in other/local machine:
 ### Install additional necessary libraries. This application works in python 2 only.
 
-> $ sudo apt-get install python-clips clips build-essential libssl-dev libffi-dev python-dev python-pip
-
-> $ pip install pyclips flask flask-socketio eventlet simplejson pandas
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
