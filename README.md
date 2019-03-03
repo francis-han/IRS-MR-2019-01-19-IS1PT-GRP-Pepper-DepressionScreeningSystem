@@ -48,11 +48,11 @@ Once level #1 is done, those identified candidates can proceed to Level #2 and l
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| CAO LIANG            | A0012884E | Architect, Application Logic and Integration    | A0012884E@nus.edu.sg |
-| GENG LIANGYU         | A0195278M | Web Application and Landing Page                | A0195278M@nus.edu.sg |
-| HAN DONGCHOU FRANCIS | A0195414A | Team Lead, Documentation, and Submission        | A0195414A@nus.edu.sg |
-| ONG BOON PING        | A0195172B | KIE Workflow and Data Structure                 | A0195172B@nus.edu.sg |
-| TAN CHIN GEE         | A0195296M | Domain Expert and Documentation                 | A0195296M@nus.edu.sg |
+| CAO LIANG            | A0012884E | Architect, Application Logic, DROOLS Rules and Integration     | A0012884E@nus.edu.sg |
+| GENG LIANGYU         | A0195278M | Web Application and Landing Page                               | A0195278M@nus.edu.sg |
+| HAN DONGCHOU FRANCIS | A0195414A | Team Lead, Documentation, and Submission                       | A0195414A@nus.edu.sg |
+| ONG BOON PING        | A0195172B | KIE Workflow and Data Structure                                | A0195172B@nus.edu.sg |
+| TAN CHIN GEE         | A0195296M | Domain Expert and Documentation                                | A0195296M@nus.edu.sg |
 
 
 ---
