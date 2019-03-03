@@ -96,7 +96,7 @@ More reference video presentations [here](https://telescopeuser.wordpress.com/20
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
-`<Github File Link>` : <https://github.com/telescopeuser/Workshop-Project-Submission-Template/blob/master/ProjectReport/Project%20Report%20HDB-BTO.pdf>
+`<Github File Link>` : <https://github.com/francis-han/Group-Project/blob/master/Project%20Report/Project%20Report3.pdf>
 
 **Recommended Sections for Project Report / Paper:**
 - Executive Summary / Paper Abstract
